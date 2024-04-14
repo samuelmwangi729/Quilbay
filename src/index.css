@@ -126,7 +126,42 @@ ul.navbar li.service:hover ul.submenu{
   visibility: visible;
   transition: ease-in-out 2s;
 }
-
+.owl-dot{
+  display: none !important;
+}
+.item{
+  height: 70vh;
+}
+div.slider1{
+  background:url('../src/Assets/Images/working.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+div.slider2{
+  background:url('../src/Assets/Images/overhead.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div.slider3{
+  background:url('../src/Assets/Images/demonstration.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+div.slider4{
+  background:url('../src/Assets/Images/office.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+div.slider5{
+  background:url('../src/Assets/Images/explanation.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media (min-width :909px){
   div.large-menus{
     visibility: visible;
@@ -171,6 +206,9 @@ ul.navbar li.service:hover ul.submenu{
   .is-submenu,ul.submenu{
     display: none;
   }
+  .item{
+    height: 40vh;
+  }
 }
 @media (max-width:443px){
   div.navigation-bar{
@@ -179,6 +217,9 @@ ul.navbar li.service:hover ul.submenu{
     left: 0%;
     height: 50px;
     z-index: 0;
+  }
+  .item{
+    height: 40vh;
   }
   div.navbar-menus{
     display: none;
