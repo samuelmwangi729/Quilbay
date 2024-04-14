@@ -204,4 +204,7 @@ ul.navbar li.service:hover ul.submenu{
   .is-submenu,ul.submenu{
     display: none;
   }
+  .auth-buttons{
+    display: none;
+  }
 }
