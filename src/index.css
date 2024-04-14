@@ -43,6 +43,7 @@ ul.navbar{
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 ul.navbar li{
   padding:0 15px 0 15px;
@@ -70,4 +71,62 @@ button{
 }
 .btn-default{
   font-size: 17px;
+}
+.icon-menu{
+  font-size: 30px;
+  font-weight: bold;
+}
+.is-submenu{
+  position: absolute;
+  display: inline-block;
+  margin: 0 2px 0;
+  font-size: 20px;
+}
+.mobile-menu-bar{
+  display: none;
+}
+ul.submenu{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  align-items: start;
+  align-content: center !important;
+  row-gap: 15px;
+  list-style-type: none;
+  position: absolute;
+  margin-top:20px ;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid var(--theme-color);
+  border-radius: 10px;
+  left: 10%;
+  text-align: left;
+  padding-left: 20px;
+  z-index: 999;
+  visibility: hidden;
+}
+li.nav-item a.nav-link{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+li.submenu-item::before{
+  content: "✓";
+  color: var(--secondary-color);
+  border-bottom: 2px solid red;
+}
+li.submenu-item{
+  width: 100%;
+}
+ul.navbar li.service:hover ul.submenu{
+  visibility: visible;
+  transition: ease-in-out 2s;
+}
+
+@media (max-width:908px){
+  ul.navbar{
+    display: none;
+  }
+  div.mobile-menu-bar{
+    display: block;
+  }
 }
