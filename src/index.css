@@ -162,6 +162,25 @@ div.slider5{
   background-size: cover;
   background-position: center;
 }
+div.slider-content{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 30px;
+  background-color: var(--secondary-color);
+  height: fit-content;
+}
+.heading{
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
 @media (min-width :909px){
   div.large-menus{
     visibility: visible;
@@ -174,7 +193,24 @@ div.slider5{
     position: relative;
     left: 0%;
   }
-  
+  .heading{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
+  div.slider-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 30px;
+    background-color: var(--secondary-color);
+    width: 80%;
+    margin: auto;
+    top: 4%;
+    height: fit-content
+  }
   div.mobile-menu-bar{
     display: block;
     color: white;
@@ -207,10 +243,13 @@ div.slider5{
     display: none;
   }
   .item{
-    height: 40vh;
+    height: 50vh;
   }
 }
 @media (max-width:443px){
+  div.slider-content{
+    visibility: hidden;
+  }
   div.navigation-bar{
     width: 100%;
     background-color: var(--secondary-color);
@@ -219,7 +258,7 @@ div.slider5{
     z-index: 0;
   }
   .item{
-    height: 40vh;
+    height: 80vh;
   }
   div.navbar-menus{
     display: none;
