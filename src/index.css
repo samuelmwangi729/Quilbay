@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  overflow: hidden;
 }
 :root{
   --theme-color: #FFA500;
@@ -151,8 +150,8 @@ ul.navbar li.service:hover ul.submenu{
   div.navigation-bar{
     width: 100%;
     background-color: var(--secondary-color);
-    position: relative;
     left: 0%;
+    z-index: 0;
   }
   div.navbar-menus{
     display: none;
@@ -167,5 +166,17 @@ ul.navbar li.service:hover ul.submenu{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+  }
+  div.navbar-menus{
+    display: block;
+    position:absolute;
+    background-color: whitesmoke;
+    top: 100%;
+    right: 0%;
+    width: 70%;
+    transition: ease-in-out 1s;
+  }
+  ul.navbar{
+    display: block;
   }
 }
