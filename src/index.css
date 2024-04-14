@@ -122,7 +122,30 @@ ul.navbar li.service:hover ul.submenu{
 }
 
 @media (max-width:908px){
-  
+  div.navigation-bar{
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: relative;
+    left: 0%;
+  }
+  ul.navbar{
+    display: none;
+  }
+  div.mobile-menu-bar{
+    display: block;
+    color: white;
+  }
+  nav.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    padding: 10px;
+  }
+  div.auth-buttons{
+    display: block;
+    transition: ease-in 3s;
+  }
 }
 @media (max-width:424px){
   div.navigation-bar{
