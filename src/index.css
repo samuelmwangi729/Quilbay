@@ -9,6 +9,9 @@
   --secondary-color: #F28500;
   --tertiary-color: #0C00F2;
 }
+div.large-menus{
+  visibility: hidden;
+}
 .navigation-bar{
   position: relative;
   background-color: var(--theme-color);
@@ -119,7 +122,11 @@ ul.navbar li.service:hover ul.submenu{
   visibility: visible;
   transition: ease-in-out 2s;
 }
-
+@media (min-width :909px){
+  div.large-menus{
+    visibility: visible;
+  }
+}
 @media(min-width:444px) and (max-width:908px){
   div.navigation-bar{
     width: 100%;
@@ -188,7 +195,7 @@ ul.navbar li.service:hover ul.submenu{
     background-color: whitesmoke;
     right: 0%;
     width: 100%;
-    top: 12%;
+    top: 15%;
     transition: 0.5s ease-in-out;
   }
   ul.navbar{
