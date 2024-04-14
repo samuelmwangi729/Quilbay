@@ -38,6 +38,8 @@ class Header extends Component {
               </a>
             </div>
             {this.state.menuOpen ? (
+              <>
+              <div className="navs">
               <div className="navbar-menus">
                 <ul className="navbar still-mobile">
                   <li className="nav-item">
@@ -88,11 +90,13 @@ class Header extends Component {
                     <a className="nav-link" href="/register">FAQs</a>
                   </li>
                 </ul>
-                  <div className="auth-buttons">
-                    <button className="btn btn-primary">Register</button>
-                    <button className="btn btn-default">Login</button>
-                  </div>
               </div>
+              <div className="auth-buttons">
+                <button className="btn btn-primary">Register</button>
+                <button className="btn btn-default">Login</button>
+              </div>
+              </div>
+              </>
             ) : (
               <div className="large-menus">
                 <div className="navbar-menus">

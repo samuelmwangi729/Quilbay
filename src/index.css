@@ -70,6 +70,10 @@ button{
   color: white;
   font-size: 17px;
 }
+div.navs{
+  display: flex;
+  flex-direction: column;
+}
 .btn-default{
   font-size: 17px;
 }
@@ -122,6 +126,7 @@ ul.navbar li.service:hover ul.submenu{
   visibility: visible;
   transition: ease-in-out 2s;
 }
+
 @media (min-width :909px){
   div.large-menus{
     visibility: visible;
