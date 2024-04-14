@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow: hidden;
 }
 :root{
   --theme-color: #FFA500;
@@ -10,10 +11,8 @@
   --tertiary-color: #0C00F2;
 }
 .navigation-bar{
-  padding: 10px;
   position: relative;
   background-color: var(--theme-color);
-  color: white;
 }
 .navbar-brand a{
   margin-top: auto;
@@ -123,10 +122,27 @@ ul.navbar li.service:hover ul.submenu{
 }
 
 @media (max-width:908px){
-  ul.navbar{
+  
+}
+@media (max-width:424px){
+  div.navigation-bar{
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: relative;
+    left: 0%;
+  }
+  div.navbar-menus{
     display: none;
   }
   div.mobile-menu-bar{
     display: block;
+    color: white;
+  }
+  nav.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
 }

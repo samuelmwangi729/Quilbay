@@ -20,7 +20,7 @@ class Header extends Component {
             </div>
             {/* create the navigation links  */}
             <div className="navbar-menus">
-              <ul className="navbar">
+              <ul className="navbar still-mobile">
                 <li className="nav-item">
                   <a className="nav-link" href="/">About Us</a>
                 </li>
@@ -75,7 +75,7 @@ class Header extends Component {
               </div>
             </div>
             <div className="mobile-menu-bar">
-              <div className="icon-menu">
+              <div className="icon-menu menu-mobile">
                 <FaBarsStaggered/>
               </div>
             </div>
