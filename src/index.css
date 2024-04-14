@@ -120,16 +120,14 @@ ul.navbar li.service:hover ul.submenu{
   transition: ease-in-out 2s;
 }
 
-@media (max-width:908px){
+@media(min-width:444px) and (max-width:908px){
   div.navigation-bar{
     width: 100%;
     background-color: var(--secondary-color);
     position: relative;
     left: 0%;
   }
-  ul.navbar{
-    display: none;
-  }
+  
   div.mobile-menu-bar{
     display: block;
     color: white;
@@ -140,17 +138,34 @@ ul.navbar li.service:hover ul.submenu{
     justify-content: baseline;
     align-items: center;
     padding: 10px;
+    column-gap: 20px;
   }
   div.auth-buttons{
     display: block;
     transition: ease-in 3s;
   }
+  div.navbar-menus{
+    display: block;
+    width: 100%;
+  }
+  ul.navbar{
+    display: block;
+    position: fixed;
+    top: 16%;
+    left: 0%;
+    background-color: whitesmoke;
+    width: 100%;
+  }
+  .is-submenu,ul.submenu{
+    display: none;
+  }
 }
-@media (max-width:424px){
+@media (max-width:443px){
   div.navigation-bar{
     width: 100%;
     background-color: var(--secondary-color);
     left: 0%;
+    height: 50px;
     z-index: 0;
   }
   div.navbar-menus{
@@ -169,14 +184,17 @@ ul.navbar li.service:hover ul.submenu{
   }
   div.navbar-menus{
     display: block;
-    position:absolute;
+    position:fixed;
     background-color: whitesmoke;
-    top: 100%;
     right: 0%;
-    width: 70%;
-    transition: ease-in-out 1s;
+    width: 100%;
+    top: 12%;
+    transition: 0.5s ease-in-out;
   }
   ul.navbar{
     display: block;
+  }
+  .is-submenu,ul.submenu{
+    display: none;
   }
 }
