@@ -4,6 +4,7 @@ class Order extends Component {
   render() {
     return (
         <>
+        <div className="fastOrder">
             <div className="quickOrder">
                 <div className="about-us">
                     <div className="title">
@@ -58,6 +59,7 @@ class Order extends Component {
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
   }

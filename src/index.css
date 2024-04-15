@@ -189,13 +189,14 @@ div.slider-content{
 div.quickOrder{
   display: flex;
   flex-direction: row;
-  column-gap: 0;
+  column-gap: 20px;
   justify-content: space-between;
   align-items: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 div.about-us{
   display: flex;
@@ -203,8 +204,6 @@ div.about-us{
   margin: 0;
   row-gap: 20px;
   padding: 10px;
-  border: 1px solid grey;
-  border-right: 1px solid var(--secondary-color);
   background-color: whitesmoke;
   height: 50vh;
   width: 70%;
@@ -228,7 +227,7 @@ div.about-us{
     height: 50vh;
     display: flex;
     flex-direction: column;
-    row-gap: 0px;
+    row-gap: 10px;
   }
 }
 .fadedText{
@@ -253,6 +252,7 @@ div.order-form{
   display: flex;
   flex-direction: column;
   row-gap: 0px;
+  padding: 5px;
 }
 .form{
   width: 100%;
@@ -294,6 +294,12 @@ button.btn-block{
   margin: 2px;
   width: 100%;
 }
+.fastOrder{
+  width: 90%;
+  margin: auto;
+  height: fit-content;
+  background-color: whitesmoke;
+}
 @media (min-width :909px){
   div.large-menus{
     visibility: visible;
@@ -323,35 +329,26 @@ button.btn-block{
     display: flex;
     flex-direction: column;
     margin: 0;
-    row-gap: 20px;
+    row-gap: 10px;
     padding: 10px;
-    border: 1px solid grey;
-    border-right: 1px solid var(--secondary-color);
     background-color: whitesmoke;
-    height: 50vh;
     width: 70%;
   }
   div.order-form{
     width: 30%;
-    background-color: var(--secondary-color);
-    height: 50vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     row-gap: 0px;
+    margin-bottom: 20px;
   }
 }
 @media(min-width:444px) and (max-width:908px){
   div.quickOrder{
     display: flex;
-    flex-direction: row;
-    column-gap: 0;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column-reverse;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    height: 40vh;
+    background-color: whitesmoke;
   }
   div.about-us{
     display: flex;
@@ -362,16 +359,27 @@ button.btn-block{
     border: 1px solid grey;
     border-right: 1px solid var(--secondary-color);
     background-color: whitesmoke;
-    height: 40vh;
-    width: 50%;
+    height: fit-content;
+    width: 80%;
+  }
+  form input,select{
+    width: 100%;
+    height: 40px;
+  }
+  .form-group{
+    margin:18px 2px;
+    width: 100%;
+  
   }
   div.order-form{
-    width: 50%;
+    margin-bottom: 20px;
+    padding: 0 10px 0 10px;
+    width: 80%;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     row-gap: 0px;
-    height: 40vh;
+    height: fit-content;
   }
   div.navigation-bar{
     width: 100%;
@@ -472,6 +480,33 @@ button.btn-block{
   }
 }
 @media (max-width:443px){
+  div.quickOrder{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  div.about-us{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    row-gap: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-right: 1px solid var(--secondary-color);
+    background-color: whitesmoke;
+    height: fit-content;
+    width: 100%;
+  }
+  div.order-form{
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    padding: 5px;
+  }
   div.slider-content{
     position: absolute;
     display: flex;
@@ -497,6 +532,13 @@ button.btn-block{
   }
   div.cta{
     display: none;
+  }
+  .secondary-heading{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family:'Maiandra GD', sans-serif;
   }
   div.navigation-bar{
     width: 100%;
