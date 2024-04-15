@@ -10,7 +10,7 @@ class Slider extends Component {
             <div class='item slider1'>
                 <div className="slider-content">
                     <h2 className='heading'>
-                        Unraveling the Mysteries
+                        Unravel the Mystery
                     </h2>
                     <div className="explanation">
                         <p>
@@ -19,15 +19,15 @@ class Slider extends Component {
                         </p>
                     </div>
                     <div className="cta">
-                        <button className='btn btn-default'>Begin Exploration</button>
-                        <button className='btn btn-primary'>Learn More</button>
+                        <button className='btn btn-default'>Explore</button>
+                        <button className='btn btn-primary'>Join Us</button>
                     </div>
                 </div>
             </div>
             <div class='item slider2'>
                 <div className="slider-content">
                     <h2 className='heading'>
-                        Innovative Research at Work
+                        Innovative Research
                     </h2>
                     <div className="explanation">
                         <p>
@@ -36,15 +36,15 @@ class Slider extends Component {
                         </p>
                     </div>
                     <div className="cta">
-                        <button className='btn btn-primary'>Explore Research</button>
-                        <button className='btn btn-default'>Discover More</button>
+                        <button className='btn btn-primary'>Start Now</button>
+                        <button className='btn btn-default'>Discover</button>
                     </div>
                 </div>
             </div>
             <div class='item slider3'>
                 <div className="slider-content">
                     <h2 className='heading'>
-                        Empowering Minds, Shaping Futures
+                        Shaping Futures
                     </h2>
                     <div className="explanation">
                         <p>
@@ -53,7 +53,7 @@ class Slider extends Component {
                         </p>
                     </div>
                     <div className="cta">
-                        <button className='btn btn-primary'>Explore Programs</button>
+                        <button className='btn btn-primary'>Hire Us</button>
                         <button className='btn btn-default'>Register</button>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ class Slider extends Component {
             <div class='item slider4'>
                 <div className="slider-content">
                     <h2 className='heading'>
-                        Global Perspectives, Local Impact
+                        Global Impact
                     </h2>
                     <div className="explanation">
                         <p>
@@ -70,15 +70,15 @@ class Slider extends Component {
                         </p>
                     </div>
                     <div className="cta">
-                        <button className='btn btn-primary'>Discover Impac</button>
-                        <button className='btn btn-default'>Engage Globally</button>
+                        <button className='btn btn-primary'>Register</button>
+                        <button className='btn btn-default'>Talk to Us</button>
                     </div>
                 </div>
             </div>
             <div class='item slider5'>
                 <div className="slider-content">
                     <h2 className='heading'>
-                        Innovative Learning Environments
+                        Innovative Environments
                     </h2>
                     <div className="explanation">
                         <p>

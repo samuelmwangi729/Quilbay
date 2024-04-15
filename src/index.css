@@ -166,7 +166,7 @@ div.slider-content{
   position: absolute;
   top: 20%;
   left: 10%;
-  width: 50%;
+  width: 40%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -206,10 +206,10 @@ div.slider-content{
     align-items: center;
     row-gap: 30px;
     background-color: var(--secondary-color);
-    width: 80%;
+    width: 60%;
     margin: auto;
-    top: 4%;
-    height: fit-content
+    top: calc(60vh - 91%);
+    height: calc(60vh - 20%)
   }
   div.mobile-menu-bar{
     display: block;
@@ -234,31 +234,52 @@ div.slider-content{
   ul.navbar{
     display: block;
     position: fixed;
-    top: 16%;
+    top: 15%;
     left: 0%;
     background-color: whitesmoke;
     width: 100%;
+    z-index: 10;
   }
   .is-submenu,ul.submenu{
     display: none;
   }
   .item{
-    height: 50vh;
+    height: 60vh;
   }
 }
 @media (max-width:443px){
   div.slider-content{
-    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+    background-color: var(--secondary-color);
+    width: 80%;
+    margin: auto;
+    top: 15%;
+    height: calc(40vh - 27%)
+  }
+  h2.heading{
+    font-size: 15px;
+    text-align: center;
+  }
+  div.explanation p{
+    font-size: 12px;
+    text-decoration: unset;
+  }
+  div.cta{
+    display: none;
   }
   div.navigation-bar{
     width: 100%;
     background-color: var(--secondary-color);
     left: 0%;
     height: 50px;
-    z-index: 0;
   }
   .item{
-    height: 80vh;
+    height: 40vh;
   }
   div.navbar-menus{
     display: none;
@@ -280,8 +301,9 @@ div.slider-content{
     background-color: whitesmoke;
     right: 0%;
     width: 100%;
-    top: 15%;
+    top: 11%;
     transition: 0.5s ease-in-out;
+    z-index: 2;
   }
   ul.navbar{
     display: block;
