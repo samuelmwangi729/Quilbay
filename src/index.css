@@ -351,7 +351,7 @@ button.btn-block{
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    height: 60vh;
+    height: 40vh;
   }
   div.about-us{
     display: flex;
@@ -405,8 +405,8 @@ button.btn-block{
     background-color: var(--secondary-color);
     width: 70%;
     margin: auto;
-    top: calc(60vh - 91%);
-    height: calc(60vh - 20%)
+    top: calc(40vh - 90%);
+    height: 30vh
   }
   .fadedText{
     font-size: 20px;
@@ -468,7 +468,7 @@ button.btn-block{
     display: none;
   }
   .item{
-    height: 60vh;
+    height: 40vh;
   }
 }
 @media (max-width:443px){
