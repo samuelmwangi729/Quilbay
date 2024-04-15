@@ -36,7 +36,7 @@ class Slider extends Component {
                         </p>
                     </div>
                     <div className="cta">
-                        <button className='btn btn-primary'>Start Now</button>
+                        <button className='btn btn-primary'>Start</button>
                         <button className='btn btn-default'>Discover</button>
                     </div>
                 </div>

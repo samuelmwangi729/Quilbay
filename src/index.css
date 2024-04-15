@@ -204,12 +204,21 @@ div.slider-content{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    row-gap: 30px;
+    row-gap: 0px;
     background-color: var(--secondary-color);
-    width: 60%;
+    width: 70%;
     margin: auto;
     top: calc(60vh - 91%);
     height: calc(60vh - 20%)
+  }
+  h2.heading{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  div.explanation p{
+    font-size: 15px;
   }
   div.mobile-menu-bar{
     display: block;
@@ -252,22 +261,24 @@ div.slider-content{
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 10px;
+    justify-content: space-evenly;
     background-color: var(--secondary-color);
     width: 80%;
     margin: auto;
+    row-gap: 0;
     top: 15%;
-    height: calc(40vh - 27%)
+    height: calc(30vh - 27%)
   }
   h2.heading{
     font-size: 15px;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
-  div.explanation p{
+  div.explanation{
     font-size: 12px;
-    text-decoration: unset;
+    margin: 0;
+    padding: 0;
   }
   div.cta{
     display: none;
@@ -279,7 +290,7 @@ div.slider-content{
     height: 50px;
   }
   .item{
-    height: 40vh;
+    height: 30vh;
   }
   div.navbar-menus{
     display: none;
