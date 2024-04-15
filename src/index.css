@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/maiandra-gd');
 *{
   margin: 0;
   padding: 0;
@@ -5,9 +6,9 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 :root{
-  --theme-color: #FFA500;
+  --theme-color: #F28500;
   --secondary-color: #F28500;
-  --tertiary-color: #0C00F2;
+  --tertiary-color: #332cb8;
 }
 div.large-menus{
   visibility: hidden;
@@ -15,6 +16,7 @@ div.large-menus{
 .navigation-bar{
   position: relative;
   background-color: var(--theme-color);
+  height: 70px;
 }
 .navbar-brand a{
   margin-top: auto;
@@ -32,6 +34,7 @@ nav.navbar-nav{
   column-gap: 10px;
   padding: 0;
   margin: 0;
+  height: 70px;
 }
 div.navbar-menus{
   display: flex;
@@ -66,8 +69,8 @@ button{
   margin: 5px  10px 5px 10px;
 }
 .btn-primary{
-  background-color: var(--theme-color);
-  color: white;
+  background-color: white;
+  color: var(--tertiary-color);;
   font-size: 17px;
 }
 div.navs{
@@ -76,6 +79,8 @@ div.navs{
 }
 .btn-default{
   font-size: 17px;
+  background-color: var(--tertiary-color);
+  color: white;
 }
 .icon-menu{
   font-size: 30px;
@@ -181,12 +186,193 @@ div.slider-content{
   font-weight: bold;
   color: white;
 }
+div.quickOrder{
+  display: flex;
+  flex-direction: row;
+  column-gap: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+div.about-us{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  row-gap: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-right: 1px solid var(--secondary-color);
+  background-color: whitesmoke;
+  height: 50vh;
+  width: 70%;
+}
+@media (min-width:1800px){
+  div.about-us{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    row-gap: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-right: 1px solid var(--secondary-color);
+    background-color: whitesmoke;
+    height: 50vh;
+    width: 70%;
+  }
+  div.order-form{
+    width: 30%;
+    background-color: var(--secondary-color);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+  }
+}
+.fadedText{
+  font-size: 30px;
+  color: gray;
+}
+.secondary-heading{
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family:'Maiandra GD', sans-serif;
+}
+.explanation{
+  font-size: 15px;
+  padding-left: 10px;
+}
+div.order-form{
+  width: 30%;
+  background-color: var(--secondary-color);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+}
+.form{
+  width: 100%;
+  margin: 0;
+}
+form.form-order{
+  padding: 10px;
+  width: 100%;
+}
+.form-group{
+  margin:5px 2px;
+  width: 100%;
+
+}
+h2.quickOrderHeading{
+  color: white;
+  text-align: center;
+}
+form input,select{
+  width: 100%;
+  height: 40px;
+}
+.form-control{
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+::placeholder,.date{
+  margin: auto;
+  padding-left: 30px;
+  font-size: 17px;
+  color: gray;
+}
+select{
+  font-size: 17px;
+  padding-left: 17px;
+  color: gray;
+}
+button.btn-block{
+  margin: 2px;
+  width: 100%;
+}
 @media (min-width :909px){
   div.large-menus{
     visibility: visible;
   }
 }
+@media (min-width :909px) and (max-width:1800px){
+  ::placeholder,.date{
+    margin: auto;
+    padding-left: 10px;
+    font-size: 15px;
+    color: gray;
+  }
+  select{
+    font-size: 17px;
+    padding-left: 17px;
+    color: gray;
+  }
+  .secondary-heading{
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family:'Maiandra GD', sans-serif;
+  }
+  
+  div.about-us{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    row-gap: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-right: 1px solid var(--secondary-color);
+    background-color: whitesmoke;
+    height: 50vh;
+    width: 70%;
+  }
+  div.order-form{
+    width: 30%;
+    background-color: var(--secondary-color);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+  }
+}
 @media(min-width:444px) and (max-width:908px){
+  div.quickOrder{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 60vh;
+  }
+  div.about-us{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    row-gap: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-right: 1px solid var(--secondary-color);
+    background-color: whitesmoke;
+    height: 40vh;
+    width: 50%;
+  }
+  div.order-form{
+    width: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    height: 40vh;
+  }
   div.navigation-bar{
     width: 100%;
     background-color: var(--secondary-color);
@@ -197,6 +383,17 @@ div.slider-content{
     font-size: 28px;
     font-weight: bold;
     color: white;
+  }
+  .secondary-heading{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family:'Maiandra GD', sans-serif;
+  }
+  .explanation{
+    font-size: 15px;
+    padding-left: 10px;
   }
   div.slider-content{
     position: absolute;
@@ -211,6 +408,10 @@ div.slider-content{
     top: calc(60vh - 91%);
     height: calc(60vh - 20%)
   }
+  .fadedText{
+    font-size: 20px;
+    color: gray;
+  }
   h2.heading{
     font-size: 20px;
     text-align: center;
@@ -220,9 +421,21 @@ div.slider-content{
   div.explanation p{
     font-size: 15px;
   }
+  form.form-order{
+    padding: 10px;
+    width: 100%;
+  }
+  .form-group{
+    margin:2px 2px;
+    width: 100%;
+  
+  }
   div.mobile-menu-bar{
     display: block;
     color: white;
+  }
+  p.explanation{
+    display: none;
   }
   nav.navbar-nav{
     display: flex;
@@ -243,11 +456,13 @@ div.slider-content{
   ul.navbar{
     display: block;
     position: fixed;
-    top: 15%;
+    top: calc(80px - 5%);
     left: 0%;
     background-color: whitesmoke;
     width: 100%;
     z-index: 10;
+    height: 150px;
+    margin: 10px 0;
   }
   .is-submenu,ul.submenu{
     display: none;
