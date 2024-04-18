@@ -7,7 +7,7 @@ class App extends Component {
   }
   render = () => {
     return (
-      <>
+      <div className='bg-gray-100'>
         <Header />
           <Routes>
             <Route index  element={<Body/>} />
@@ -20,7 +20,7 @@ class App extends Component {
             <Route path="/Order-Now" element={<Login/>} />
           </Routes>
         <Footer />
-      </>
+      </div>
     )
   }
 }

@@ -44,6 +44,13 @@
     background-size: cover;
     background-position:center;
 }
+.about-bg{
+    background:url('./Assets/Images/Announcement.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
 .owl-dots{
     display: none;
 }

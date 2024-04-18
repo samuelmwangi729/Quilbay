@@ -9,7 +9,7 @@ export default {
       colors:{
         primary:'#f97316',
         secondary:'#053ef9'
-      }
+      },
     },
   },
   plugins: [],

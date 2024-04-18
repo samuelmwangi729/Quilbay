@@ -59,25 +59,22 @@ class Header extends Component {
             <div className='md:hidden font-bold text-white w-full mt-5 border-t w-full '>
             <ul className='flex flex-col justify-between items-center'>
                 <li className='hover:bg-secondary hover:text-white'>
-                    <a href="http://" className='w-full p-2 transition ease-linear duration-500'>About Us</a>
+                    <Link to="/About">About</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <a href="http://">Services</a>
+                    <Link to="/Services">Services</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <a href="http://">Portfolio</a>
+                    <Link to="/Blog">Blog</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <a href="http://">Blog</a>
+                    <Link to="/Contact-Us">Contact Us</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <a href="http://">Contact Us</a>
+                    <Link to="/FAQ">FAQs</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <a href="http://">FAQs</a>
-                </li>
-                <li className='hover:bg-secondary hover:text-white p-2'>
-                    <a href="http://">My Account</a>
+                    <Link to="/Account">Account</Link>
                 </li>
             </ul>
         </div>
