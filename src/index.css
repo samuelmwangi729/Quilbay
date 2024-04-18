@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .item{
-    height: 70vh;
+    height: 50vh;
 }
 .slider1{
     background: url('./Assets/Images/demonstration.jpg');
