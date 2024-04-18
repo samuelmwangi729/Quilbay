@@ -8,7 +8,7 @@ class Slider extends Component {
       <div className='w-[100%]'>
         <OwlCarousel className="owl-theme font-serif" lazyLoad={true} autoplay={true} autoplayTimeout={5000} animateIn={'flipInX'} animateOut={'fadeOut'} smartSpeed={450} loop margin={10} items={1} >
             <div class='item slider1 shadow'>
-                <div className="bg-primary w-[80%] md:w-[30%] absolute top-[30%] left-[10%]  p-2">
+                <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Unravel the Mystery
                     </h2>
@@ -25,7 +25,7 @@ class Slider extends Component {
                 </div>
             </div>
             <div class='item slider2'>
-                <div className="bg-primary w-[80%] md:w-[30%] absolute top-[30%] left-[10%]  p-2">
+                <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Innovative Research
                     </h2>
@@ -42,7 +42,7 @@ class Slider extends Component {
                 </div>
             </div>
             <div class='item slider3'>
-                <div className="bg-primary w-[80%] md:w-[30%] absolute top-[30%] left-[10%]  p-2">
+                <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Shaping Futures
                     </h2>
@@ -59,7 +59,7 @@ class Slider extends Component {
                 </div>
             </div>
             <div class='item slider4'>
-                <div className="bg-primary w-[80%] md:w-[30%] absolute top-[30%] left-[10%]  p-2">
+                <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Global Impact
                     </h2>
@@ -76,7 +76,7 @@ class Slider extends Component {
                 </div>
             </div>
             <div class='item slider5'>
-                <div className="bg-primary w-[80%] md:w-[30%] absolute top-[30%] left-[10%]  p-2">
+                <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Great Environments
                     </h2>

@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.item{
-    height: 50vh;
-}
+
 .slider1{
     background: url('./Assets/Images/demonstration.jpg');
     background-repeat: no-repeat;
@@ -99,4 +97,10 @@
 }
 .media-icon{
     @apply bg-black border border-white p-2 text-4xl rounded-full;
+}
+.item{
+    @apply md:h-[40vh] h-[50vh];
+}
+.slider-caption{
+    @apply bg-primary w-[80%] md:w-[50%] absolute md:top-[10%] lg:top-[25%] lg:w-[30%] top-[10%] left-[10%]  p-2;
 }
