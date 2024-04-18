@@ -9,14 +9,14 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position:top
+    background-position:bottom
 }
 .slider2{
     background: url('./Assets/Images/3.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position:center
+    background-position:top
 }
 .slider3{
     background: url('./Assets/Images/overhead.jpg');
@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position:center
+    background-position:top
 }
 .subs{
     background: url('./Assets/Images/background.jpg');
@@ -87,4 +87,16 @@
 }
 .btn{
     @apply bg-primary mx-2 font-bold text-white p-2 hover:bg-secondary hover:text-white;
+}
+.title-footer{
+    @apply font-bold text-sm font-serif mt-3 p-2 hover:text-primary transition ease-in duration-500;
+}
+.footer-item{
+    @apply text-left md:w-1/4 w-full;
+}
+.media {
+    @apply flex justify-between items-center gap-2;
+}
+.media-icon{
+    @apply bg-black border border-white p-2 text-4xl rounded-full;
 }
