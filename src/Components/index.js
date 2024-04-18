@@ -1,4 +1,5 @@
 export {default as Banner} from './Banner';
+export {default as Body} from './Body';
 export {default as Blogs} from './Blogs';
 export {default as Footer} from './Footer';
 export {default as Header} from './Header';
@@ -7,3 +8,10 @@ export {default as Roadmap} from './Roadmap';
 export {default as Slider} from './Slider';
 export {default as Subscribe} from './Subscribe';
 export {default as Testimonials} from './Testimonials';
+export {default as Service} from './Service'
+export {default as About} from './About'
+export {default as Blog} from './Blog'
+export {default as Contact} from './Contact'
+export {default as FAQ} from './FAQ'
+export {default as Register} from './Register'
+export {default as Login} from './Login'

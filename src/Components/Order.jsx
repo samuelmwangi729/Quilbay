@@ -5,7 +5,7 @@ class Order extends Component {
     return (
         <>
         <div className="w-[100%] md:w-[80%] m-auto mt-2 mb-2 p-2 ">
-            <div className="flex md:flex-row flex-col justify-between items-center gap-2">
+            <div className="flex md:flex-row flex-col-reverse justify-between items-center gap-2">
                 <div className="md:w-[60%] w-[100%] p-4">
                     <div className="font-bold font-serif">
                         <h3 className="text-4xl">

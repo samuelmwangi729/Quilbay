@@ -7,7 +7,7 @@ class Slider extends Component {
     return (
       <div className='w-[100%]'>
         <OwlCarousel className="owl-theme font-serif" lazyLoad={true} autoplay={true} autoplayTimeout={5000} animateIn={'flipInX'} animateOut={'fadeOut'} smartSpeed={450} loop margin={10} items={1} >
-            <div class='item slider1 shadow'>
+            <div className='item slider1 shadow'>
                 <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Unravel the Mystery
@@ -24,7 +24,7 @@ class Slider extends Component {
                     </div>
                 </div>
             </div>
-            <div class='item slider2'>
+            <div className='item slider2'>
                 <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Innovative Research
@@ -41,7 +41,7 @@ class Slider extends Component {
                     </div>
                 </div>
             </div>
-            <div class='item slider3'>
+            <div className='item slider3'>
                 <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Shaping Futures
@@ -58,7 +58,7 @@ class Slider extends Component {
                     </div>
                 </div>
             </div>
-            <div class='item slider4'>
+            <div className='item slider4'>
                 <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Global Impact
@@ -75,7 +75,7 @@ class Slider extends Component {
                     </div>
                 </div>
             </div>
-            <div class='item slider5'>
+            <div className='item slider5'>
                 <div className="slider-caption">
                     <h2 className='text-xl md:text-2xl font-bold text-white py-2 hover:text-secondary transition ease-linear duration-500'>
                         Great Environments

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {FaBars,FaX} from 'react-icons/fa6'
+import { Link } from 'react-router-dom';
 class Header extends Component {
     constructor(){
         super();
@@ -17,30 +18,36 @@ class Header extends Component {
     return (
       <div className='w-full h-[fit-content] bg-orange-500 sticky top-0 left-0 font-serif z-10 p-2 transition ease-linear duration-500'>
         <nav className='flex justify-between  items-center  w-full'>
-            <h2 className='logo hover:text-secondary transition ease-in duration-500'>QuilBay</h2>
+            <h2 className='logo hover:text-secondary transition ease-in duration-500'>
+                <Link to={"/"}>QuilBay</Link>
+            </h2>
             <div className='md:flex  items-center md:gap-1 mx-4'>
                 <ul className='md:flex gap-2 items-center text-white font-bold hidden '>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <a href="http://">About</a>
+                        <Link to="/About">About</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <a href="http://">Services</a>
+                        <Link to="/Services">Services</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <a href="http://">Blog</a>
+                        <Link to="/Blog">Blog</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <a href="http://">Contact</a>
+                        <Link to="/Contact-Us">Contact Us</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <a href="http://">FAQs</a>
+                        <Link to="/FAQ">FAQs</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <a href="http://">Register</a>
+                        <Link to="/Account">Account</Link>
                     </li>
                 </ul>
                 <div className=''>
-                    <button className='bg-secondary p-2 mt-1 text-white w-[calc(200%/2)] md:w-[auto] md:border border-secondary md:rounded-xl hover:bg-white hover:text-secondary transition ease-linear duration-500'>Order Now</button>
+                        <Link to={"/Order-Now"}>
+                            <button className='bg-secondary p-2 mt-1 text-white w-[calc(200%/2)] md:w-[auto] md:border border-secondary md:rounded-xl hover:bg-white hover:text-secondary transition ease-linear duration-500'>
+                                Order Now
+                            </button>
+                        </Link>
                 </div>
             </div>
             <div className='flex justify-between items-center px-3 text-3xl text-white md:hidden' onClick={this.openMenu}>
@@ -70,7 +77,7 @@ class Header extends Component {
                     <a href="http://">FAQs</a>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <a href="http://">Register</a>
+                    <a href="http://">My Account</a>
                 </li>
             </ul>
         </div>
