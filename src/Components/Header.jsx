@@ -1,179 +1,84 @@
 import React, { Component } from 'react'
-import { FaBarsStaggered } from "react-icons/fa6";
-import { PiCaretDownLight } from "react-icons/pi";
-import { FaTimes } from "react-icons/fa";
+import {FaBars,FaX} from 'react-icons/fa6'
 class Header extends Component {
     constructor(){
         super();
-        this.openMenu = this.openMenu.bind(this);
-        
+        this.openMenu = this.openMenu.bind(this)
     }
     state = {
-      menuOpen: false,
-      deviceWindowLength :0
-    }
-    updateDeviceWindow = () =>{
-      this.setState({
-        deviceWindowLength: document.documentElement.clientWidth
-      })
+        menuOpen:false
     }
     openMenu = ()=>{
-      this.updateDeviceWindow()
-      this.setState({
-        menuOpen:!this.state.menuOpen
-      })
-
+        this.setState({
+            menuOpen:!this.state.menuOpen
+        })
     }
-  render = ()=> {
+  render() {
     return (
-      <>
-        <div className="navigation-bar">
-          <nav className="navbar-nav">
-            {/* start with navbar Brand */}
-            <div className="navbar-brand">
-              <a href="http://">
-                <h1 className='logo'>
-                  QuilBay
-                </h1>
-              </a>
+      <div className='w-full h-[fit-content] bg-orange-500 sticky top-0 left-0 font-serif z-10 p-2 transition ease-linear duration-500'>
+        <nav className='flex justify-between  items-center  w-full'>
+            <h2 className='logo hover:text-secondary transition ease-in duration-500'>QuilBay</h2>
+            <div className='md:flex  items-center md:gap-1 mx-4'>
+                <ul className='md:flex gap-2 items-center text-white font-bold hidden '>
+                    <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
+                        <a href="http://">About</a>
+                    </li>
+                    <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
+                        <a href="http://">Services</a>
+                    </li>
+                    <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
+                        <a href="http://">Blog</a>
+                    </li>
+                    <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
+                        <a href="http://">Contact</a>
+                    </li>
+                    <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
+                        <a href="http://">FAQs</a>
+                    </li>
+                    <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
+                        <a href="http://">Register</a>
+                    </li>
+                </ul>
+                <div className=''>
+                    <button className='bg-secondary p-2 mt-1 text-white w-[calc(200%/2)] md:w-[auto] md:border border-secondary md:rounded-xl hover:bg-white hover:text-secondary transition ease-linear duration-500'>Order Now</button>
+                </div>
             </div>
-            {this.state.menuOpen ? (
-              <>
-              <div className="navs">
-              <div className="navbar-menus">
-                <ul className="navbar still-mobile">
-                  <li className="nav-item">
-                    <a className="nav-link" href="/">About Us</a>
-                  </li>
-                  <li className="nav-item has-submenu service">
-                    <a className="nav-link" href="/contact">Services</a> 
-                    <div className="icon is-submenu">
-                      <PiCaretDownLight/>
-                    </div>
-                      <ul className="submenu">
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Course Work</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Content Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Article Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Copy Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Editing & Proofreading</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Ghost Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Technical Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Academic Writing</a>
-                        </li>
-                      </ul>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/about">Portfolio</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/login">Blog</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/register">Contact Us</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/register">FAQs</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="auth-buttons">
-                <button className="btn btn-primary">Register</button>
-                <button className="btn btn-default">Login</button>
-              </div>
-              </div>
-              </>
-            ) : (
-              <div className="large-menus">
-                <div className="navbar-menus">
-                <ul className="navbar still-mobile">
-                  <li className="nav-item">
-                    <a className="nav-link" href="/">About Us</a>
-                  </li>
-                  <li className="nav-item has-submenu service">
-                    <a className="nav-link" href="/contact">Services</a> 
-                    <div className="icon is-submenu">
-                      <PiCaretDownLight/>
-                    </div>
-                      <ul className="submenu">
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Course Work</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Content Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Article Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Copy Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Editing & Proofreading</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Ghost Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Technical Writing</a>
-                        </li>
-                        <li className="submenu-item">
-                          <a href="#" className="menu-link">Academic Writing</a>
-                        </li>
-                      </ul>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/about">Portfolio</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/login">Blog</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/register">Contact Us</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/register">FAQs</a>
-                  </li>
-                </ul>
-                  <div className="auth-buttons">
-                    <button className="btn btn-primary">Register</button>
-                    <button className="btn btn-default">Login</button>
-                  </div>
-              </div>
-              </div>
-            )}
-            {/* create the navigation links  */}
+            <div className='flex justify-between items-center px-3 text-3xl text-white md:hidden' onClick={this.openMenu}>
+                {this.state.menuOpen?(<FaX/>): (<FaBars/>)}
+            </div>
             
-            <div className="mobile-menu-bar">
-              {this.state.menuOpen? (
-                <div className="icon-menu menu-mobile" onClick={this.openMenu}>
-                  <FaTimes/>
-                </div>
-              ) : (
-                <div className="icon-menu menu-mobile" onClick={this.openMenu}>
-                  <FaBarsStaggered/>
-                </div>
-              )}
-              
-            </div>
-          </nav>
+        </nav>
+        {this.state.menuOpen?(
+            <div className='md:hidden font-bold text-white w-full mt-5 border-t w-full '>
+            <ul className='flex flex-col justify-between items-center'>
+                <li className='hover:bg-secondary hover:text-white'>
+                    <a href="http://" className='w-full p-2 transition ease-linear duration-500'>About Us</a>
+                </li>
+                <li className='hover:bg-secondary hover:text-white p-2'>
+                    <a href="http://">Services</a>
+                </li>
+                <li className='hover:bg-secondary hover:text-white p-2'>
+                    <a href="http://">Portfolio</a>
+                </li>
+                <li className='hover:bg-secondary hover:text-white p-2'>
+                    <a href="http://">Blog</a>
+                </li>
+                <li className='hover:bg-secondary hover:text-white p-2'>
+                    <a href="http://">Contact Us</a>
+                </li>
+                <li className='hover:bg-secondary hover:text-white p-2'>
+                    <a href="http://">FAQs</a>
+                </li>
+                <li className='hover:bg-secondary hover:text-white p-2'>
+                    <a href="http://">Register</a>
+                </li>
+            </ul>
         </div>
-      </>
+        ):""}
+            
+      </div>
     )
   }
 }
-export default Header;
+
+export default Header

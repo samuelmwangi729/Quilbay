@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.item{
+    height: 50vh;
+}
+.slider1{
+    background: url('./Assets/Images/demonstration.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:top
+}
+.slider2{
+    background: url('./Assets/Images/3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center
+}
+.slider3{
+    background: url('./Assets/Images/overhead.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:top
+}
+.slider4{
+    background: url('./Assets/Images/working.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center
+}
+.slider5{
+    background: url('./Assets/Images/office.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center
+}
+.subs{
+    background: url('./Assets/Images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+.owl-dots{
+    display: none;
+}
+.blog{
+    @apply shadow p-2 hover:shadow-primary transition ease-linear duration-500;
+  }
+.meta-data{
+    @apply flex flex-row justify-between items-center;
+}
+.meta-data-description{
+    @apply whitespace-nowrap text-sm font-bold text-gray-400 mt-2;
+}
+.title{
+    @apply text-4xl font-bold mb-2 text-gray-400 text-center;
+}
+.secondary-title{
+    @apply text-2xl font-bold text-center;
+}
+.flex-box{
+    @apply flex flex-col md:flex-row justify-center items-center gap-2 w-full;
+}
+.logo{
+    @apply text-3xl md:text-4xl text-gray-200 px-2 font-bold underline
+}
+.payment-method{
+    @apply text-white p-1 bg-primary m-2 hover:bg-secondary hover:text-white transition ease-linear duration-500;
+}
+.links{
+    @apply flex flex-col md:flex-row justify-between items-center text-gray-500;
+}
+.link{
+    @apply hover:text-secondary transition ease-in duration-500;
+}
+.text-primary{
+    @apply text-orange-500;
+}
+.fade {
+    @apply text-gray-400;
+}
+.btn{
+    @apply bg-primary mx-2 font-bold text-white p-2 hover:bg-secondary hover:text-white;
+}

@@ -6,32 +6,32 @@ import BlogImg4 from '../Assets/Images/working.jpg'
 class Blogs extends Component {
   render() {
     return (
-      <div className="blogs">
-        <h1 className="fadedText text-center">
+      <div className=" w-full  font-serif m-auto">
+        <h1 className="secondary-title">
             BLOG
         </h1>
-        <h2 className="primaryText text-center">
+        <h2 className="title">
             Our Latest News
         </h2>
-        <div className="blogposts">
+        <div className="flex-box">
             {/* start blogpost */}
-            <div className="blogpost">
-                <div className="blogpost-img">
-                    <img src={BlogImg} alt="Blog 1" />
+            <div className="blog">
+                <div className="md:w-full w-80 m-auto">
+                    <img src={BlogImg} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">
-                    <div className="blogpost-heading">
-                        <h6 className="text-center">
+                    <div className="text-gray-400">
+                        <h6 className="text-left font-semibold">
                             Lorem ipsum dolor sit amet.
                         </h6>
                     </div>
-                    <div className="blog-metadata">
-                        <div className="date-created">
+                    <div className="meta-data">
+                        <div className="meta-data-description">
                              <span>
                                 20 Days ago
                             </span>
                         </div>
-                        <div className="blog-comments">
+                        <div className="meta-data-description">
                             <span>
                                 20 comments
                             </span>
@@ -41,23 +41,23 @@ class Blogs extends Component {
             </div>
             {/* End blog post */}
             {/* start blogpost */}
-            <div className="blogpost">
-                <div className="blogpost-img">
-                     <img src={BlogImg2} alt="Blog 1" />
+            <div className="blog">
+                <div className="md:w-full w-80 m-auto">
+                    <img src={BlogImg2} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">
-                    <div className="blogpost-heading">
-                        <h6 className="text-center">
+                    <div className="text-gray-400">
+                        <h6 className="text-left font-semibold">
                             Lorem ipsum dolor sit amet.
                         </h6>
                     </div>
-                    <div className="blog-metadata">
-                        <div className="date-created">
+                    <div className="meta-data ">
+                        <div className="meta-data-description">
                              <span>
                                 20 Days ago
                             </span>
                         </div>
-                        <div className="blog-comments">
+                        <div className="meta-data-description">
                             <span>
                                 20 comments
                             </span>
@@ -67,24 +67,24 @@ class Blogs extends Component {
             </div>
             {/* End blog post */}
             {/* start blogpost */}
-            <div className="blogpost">
-                <div className="blogpost-img">
-                     <img src={BlogImg3} alt="Blog 1" />
+            <div className="blog">
+                <div className="md:w-full w-80 m-auto">
+                    <img src={BlogImg3} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">
-                    <div className="blogpost-heading">
-                        <h6 className="text-center">
+                    <div className="text-gray-400">
+                        <h6 className="text-left font-semibold">
                             Lorem ipsum dolor sit amet.
                         </h6>
                     </div>
-                    <div className="blog-metadata">
-                        <div className="date-created">
-                           <span>
+                    <div className="meta-data ">
+                        <div className="meta-data-description">
+                             <span>
                                 20 Days ago
                             </span>
                         </div>
-                        <div className="blog-comments">
-                           <span>
+                        <div className="meta-data-description">
+                            <span>
                                 20 comments
                             </span>
                         </div>
@@ -93,23 +93,23 @@ class Blogs extends Component {
             </div>
             {/* End blog post */}
             {/* start blogpost */}
-            <div className="blogpost">
-                <div className="blogpost-img">
-                <img src={BlogImg4} alt="Blog 1" />
+            <div className="blog">
+                <div className="md:w-full w-80 m-auto">
+                    <img src={BlogImg4} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">
-                    <div className="blogpost-heading">
-                        <h6 className="text-center">
+                    <div className="text-gray-400">
+                        <h6 className="text-left font-semibold">
                             Lorem ipsum dolor sit amet.
                         </h6>
                     </div>
-                    <div className="blog-metadata">
-                        <div className="date-created">
-                            <span>
+                    <div className="meta-data ">
+                        <div className="meta-data-description ">
+                             <span>
                                 20 Days ago
                             </span>
                         </div>
-                        <div className="blog-comments">
+                        <div className="meta-data-description">
                             <span>
                                 20 comments
                             </span>

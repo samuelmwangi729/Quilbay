@@ -10,7 +10,9 @@ class Layout extends Component{
         return (
             <>
                 <Header/>
+                <main className='bg-gray-200'>
                 <Body/>
+                </main>
                 <Footer/>
             </>
         )
