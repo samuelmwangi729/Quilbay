@@ -11,7 +11,7 @@ class Roadmap extends Component{
                     <h1 className='text-4xl font-serif font-bold text-center text-primary hover:text-secondary'>
                         How Our Writing Works
                     </h1>
-                    <div className="flex md:flex-row flex-col justify-center items-center md:w-[100%] lg:w-[80%] mb-4 w-80 m-auto mt-2">
+                    <div className="flex md:flex-row flex-col justify-center items-center md:w-[90%] lg:w-[80%] mb-4 m-auto mt-2">
                         {/* start roadmap box */}
                         <div className="shadow-lg shadow-primary bg-white rounded p-2 hover:shadow-secondary mb-4 transition ease-in-out duration-500 m-2">
                             <div className="flex flex-row item-center justify-between text-3xl p-2">

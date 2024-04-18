@@ -16,7 +16,7 @@ class Blogs extends Component {
         <div className="flex-box">
             {/* start blogpost */}
             <div className="blog">
-                <div className="md:w-full w-80 m-auto">
+                <div className="md:w-full w-[100%] m-auto">
                     <img src={BlogImg} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">
@@ -42,7 +42,7 @@ class Blogs extends Component {
             {/* End blog post */}
             {/* start blogpost */}
             <div className="blog">
-                <div className="md:w-full w-80 m-auto">
+                <div className="md:w-full w-[100%] m-auto">
                     <img src={BlogImg2} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">
@@ -68,7 +68,7 @@ class Blogs extends Component {
             {/* End blog post */}
             {/* start blogpost */}
             <div className="blog">
-                <div className="md:w-full w-80 m-auto">
+                <div className="md:w-full w-[100%] m-auto">
                     <img src={BlogImg3} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">
@@ -94,7 +94,7 @@ class Blogs extends Component {
             {/* End blog post */}
             {/* start blogpost */}
             <div className="blog">
-                <div className="md:w-full w-80 m-auto">
+                <div className="md:w-full w-[100%] m-auto">
                     <img src={BlogImg4} alt="Blog 1"/>
                 </div>
                 <div className="blogpost-details">

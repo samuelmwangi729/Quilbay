@@ -26,7 +26,7 @@ class Order extends Component {
                         </p>
                     </div>
                 </div>
-                <div className="bg-primary p-4 md:w-[40%] w-[60%] flex flex-col justify-center items-center">
+                <div className="bg-primary p-4 md:w-[40%] w-[90%] flex flex-col justify-center items-center">
                     <div className="font-serif">
                         <h2 className='text-white font-bold text-center'>
                             Quick Order
@@ -37,18 +37,18 @@ class Order extends Component {
                     <div className="container">
                         <form action="" className="flex justify-center gap-2 items-center flex-col">
                             <div className="w-full">
-                                <input type="email" name="" id="" className="w-full text-sm py-1 px-2 focus:outline-0" placeholder='Enter your email address' />
+                                <input type="email" name="" id="" className="w-full text-sm py-2 px-2 focus:outline-0" placeholder='Enter your email address' />
                             </div>
                             <div className="w-full">
-                                <select name="" id="" className='w-full text-sm py-1 px-2 focus:outline-0 text-gray-500'>
+                                <select name="" id="" className='w-full text-sm py-2 px-2 focus:outline-0 text-gray-500'>
                                     <option label="--Select Content--"></option>
                                 </select>
                             </div>
                             <div className="w-full">
-                                <input type="number" name="" id="" className="w-full text-sm py-1 px-2 focus:outline-0 text-gray-500" placeholder='Number of words per page' />
+                                <input type="number" name="" id="" className="w-full text-sm py-2 px-2 focus:outline-0 text-gray-500" placeholder='Number of words per page' />
                             </div>
                             <div className="w-full">
-                                <input type="date" name="" id="" className="w-full text-sm py-1 px-2 focus:outline-0 text-gray-500" />
+                                <input type="date" name="" id="" className="w-full text-sm py-2 px-2 focus:outline-0 text-gray-500" />
                             </div>
                             <div className="button w-full">
                                 <button className="p-2 bg-secondary text-white w-full hover:bg-white hover:text-secondary">
