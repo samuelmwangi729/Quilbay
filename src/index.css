@@ -51,6 +51,13 @@
     background-size: cover;
     background-position:center;
 }
+.service-bg{
+    background: url("./Assets/Images/servicess.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:bottom;
+}
 .owl-dots{
     display: none;
 }
