@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Logo from '../Assets/Images/logo.png';
 class Subscribe extends Component {
   render() {
     return (
@@ -6,7 +7,7 @@ class Subscribe extends Component {
         <div className="flex flex-col md:flex-row justify-center items-start gap-2 subs">
             <div className="w-[100%] p-2">
                 <div className="text-primary font-serif text-center md:text-left p-2 text-4xl font-bold underline">
-                    QuilBay
+                    <img src={Logo} alt="Quilbay Logo" className='object-cover h-[100px]' />
                 </div>
                 <div className="about-us-subs">
                     <p className="about-explanation">

@@ -58,6 +58,20 @@
     background-size: cover;
     background-position:bottom;
 }
+.blog-bg{
+    background: url("./Assets/Images/blog.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:bottom;
+}
+.contact-bg{
+    background: url("./Assets/Images/Contact.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:bottom;
+}
 .owl-dots{
     display: none;
 }
@@ -68,7 +82,7 @@
     @apply flex flex-row justify-between items-center;
 }
 .meta-data-description{
-    @apply whitespace-nowrap text-sm font-bold text-gray-400 mt-2;
+    @apply whitespace-nowrap text-[12px] font-bold text-gray-400 mt-2;
 }
 .title{
     @apply text-4xl font-bold mb-2 text-gray-400 text-center;
