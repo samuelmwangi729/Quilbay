@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {FaBars,FaX} from 'react-icons/fa6'
 import { Link } from 'react-router-dom';
 import Logo from '../Assets/Images/logo.png';
+import LogoHeader from '../Assets/Images/logo-1.png';
 class Header extends Component {
     constructor(){
         super();
@@ -20,7 +21,7 @@ class Header extends Component {
       <div className='w-full h-[fit-content] bg-orange-500 sticky top-0 left-0 font-serif z-10 p-2 transition ease-linear duration-500'>
         <nav className='flex justify-between  items-center  w-full'>
             <Link to={"/"}>
-                <img src={Logo} alt="Quilbay Logo" className='object-cover h-[50px]' />
+                <img src={LogoHeader} alt="Quilbay Logo" className='object-cover h-[50px]' />
             </Link>
             <div className='md:flex  items-center md:gap-1 mx-4'>
                 <ul className='md:flex gap-2 items-center text-white font-bold hidden '>
