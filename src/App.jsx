@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Body,Header,Footer,Service, Login, FAQ, Blog, About, Contact} from './Components';
+import {Body,Header,Footer,Service, Login, FAQ, Blog, About, Contact,Register,Reset,UpdatePasswords} from './Components';
 import {Routes, Route, Outlet} from 'react-router-dom'
 class App extends Component {
   constructor(props) {
@@ -17,6 +17,9 @@ class App extends Component {
             <Route path="/Contact-Us" element={<Contact/>} />
             <Route path="/FAQ" element={<FAQ/>} />
             <Route path="/Account" element={<Login/>} />
+            <Route path="/Register" element={<Register/>} />
+            <Route path="/Reset" element={<Reset/>} />
+            <Route path="/Update-Passwords" element={<UpdatePasswords/>} />
             <Route path="/Order-Now" element={<Login/>} />
           </Routes>
         <Footer />

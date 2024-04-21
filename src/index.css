@@ -75,6 +75,9 @@
 .owl-dots{
     display: none;
 }
+.form-group{
+    @apply flex flex-col w-full gap-1
+}
 .blog{
     @apply shadow p-2 hover:shadow-primary transition ease-linear duration-500;
   }
@@ -113,6 +116,9 @@
 }
 .btn{
     @apply bg-primary mx-2 font-bold text-white p-2 hover:bg-secondary hover:text-white;
+}
+.form-control{
+    @apply  mx-2 font-serif text-slate-500 p-2  border focus:outline-none;
 }
 .title-footer{
     @apply font-bold text-sm font-serif mt-3 p-2 hover:text-primary transition ease-in duration-500;

@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import {FaBars,FaX} from 'react-icons/fa6'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../Assets/Images/logo.png';
 import LogoHeader from '../Assets/Images/logo-1.png';
 class Header extends Component {
+    
     constructor(){
         super();
         this.openMenu = this.openMenu.bind(this)
     }
+    
     state = {
-        menuOpen:false
+        menuOpen:false,
     }
     openMenu = ()=>{
         this.setState({
