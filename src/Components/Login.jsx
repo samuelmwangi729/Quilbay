@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default class Login extends Component {
   render() {
     return (
-      <section className='flex flex-col justify-center items-start gap-3 h-screen md:w-[50%] lg:w-[30%] w-[90%] m-auto'>
+      <section className='flex flex-col justify-center items-start gap-3 h-[fit-content] md:w-[50%] lg:w-[30%] w-[90%] m-auto'>
         <div className="form w-full shadow-xl p-5 mb-5">
         <h1 className="mx-2 text-xl font-bold">
           Login your Account
