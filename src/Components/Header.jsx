@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {FaBars,FaX} from 'react-icons/fa6'
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../Assets/Images/logo.png';
 import LogoHeader from '../Assets/Images/logo-1.png';
 class Header extends Component {
     
@@ -37,13 +36,16 @@ class Header extends Component {
                         <Link to="/Blog">Blog</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <Link to="/Contact-Us">Contact Us</Link>
+                        <Link to="/Contact-Us">Contact</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
                         <Link to="/FAQ">FAQs</Link>
                     </li>
                     <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
-                        <Link to="/Account">Account</Link>
+                        <Link to="/Register">Register</Link>
+                    </li>
+                    <li className='hover:bg-secondary hover:text-white p-2 transition ease-linear duration-500'>
+                        <Link to="/Login">Login</Link>
                     </li>
                 </ul>
                 <div className=''>
@@ -60,7 +62,7 @@ class Header extends Component {
             
         </nav>
         {this.state.menuOpen?(
-            <div className='md:hidden font-bold text-white w-full mt-5 border-t w-full '>
+            <div className='md:hidden font-bold text-white w-full mt-5 border-t '>
             <ul className='flex flex-col justify-between items-center'>
                 <li className='hover:bg-secondary hover:text-white'>
                     <Link to="/About">About</Link>
@@ -72,13 +74,16 @@ class Header extends Component {
                     <Link to="/Blog">Blog</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <Link to="/Contact-Us">Contact Us</Link>
+                    <Link to="/Contact-Us">Contact</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
                     <Link to="/FAQ">FAQs</Link>
                 </li>
                 <li className='hover:bg-secondary hover:text-white p-2'>
-                    <Link to="/Account">Account</Link>
+                    <Link to="/Register">Register</Link>
+                </li>
+                <li className='hover:bg-secondary hover:text-white p-2'>
+                    <Link to="/Login">Login</Link>
                 </li>
             </ul>
         </div>

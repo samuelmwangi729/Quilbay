@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    font-family: sans-serif;
+}
 
 .slider1{
     background: url('./Assets/Images/demonstration.jpg');

@@ -6,7 +6,7 @@ export default class Contact extends Component {
     return (
       <>
       <section className='h-[30vh] contact-bg flex flex-col items-center justify-center'>
-          <div className="text-black md:text-6xl text-xl font-bold capitalize">
+          <div className="text-black md:text-4xl text-xl font-bold capitalize">
              Our Contact
           </div>
           <div className='text-white bg-primary'>

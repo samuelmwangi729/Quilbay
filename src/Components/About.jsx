@@ -4,22 +4,26 @@ import ServiceImg from '../Assets/Images/Services.jpg'
 import ServiceImg1 from '../Assets/Images/servicess.jpg'
 import { PiCheckSquareBold,PiIdentificationBadgeLight,PiGraphLight,PiSealCheckFill,PiStarThin ,PiUsersFourFill,PiUserCircle,PiShareThin} from 'react-icons/pi';
 export default class About extends Component {
+  constructor({from}){
+    super()
+    
+  }
   render() {
     return (
       <>
         <section className='about-bg md:h-[50vh] h-[50vh] relative flex flex-col justify-center items-start gap-2 px-4'>
           <div className='w-[90%] md:w-[60%] md:top-[20%] top-[10%] font-serif bg-slate-300 md:bg-transparent'>
             <div className="ml-3">
-              <h1 className="md:text-4xl text-2xl font-bold font-serif border-l-2 border-secondary hover:text-secondary transition-colors ease-linear duration-500">
+              <h1 className="md:text-3xl text-2xl font-bold font-serif border-l-2 border-secondary hover:text-secondary transition-colors ease-linear duration-500">
                 About Us
               </h1>
             </div>
-            <div className='px-4 mt-5'>
+            <div className='px-4 mt-2'>
               <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reiciendis beatae sunt consequatur aut error eligendi provident architecto aliquid eos.
               </span>
             </div>
-            <div className='px-4 mt-5 hidden md:block mb-2'>
+            <div className='px-4 mt-1 hidden md:block mb-2'>
               <button className='p-2 text-white bg-secondary'>
                 Read More
               </button>

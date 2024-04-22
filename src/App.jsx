@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import {Body,Header,Footer,Service, Login, FAQ, Blog, About, Contact,Register,Reset,UpdatePasswords} from './Components';
-import {Routes, Route, Outlet} from 'react-router-dom'
+import {Body,Header,Footer,Service, Login, FAQ, Blog, About, Contact,Register,Reset,UpdatePasswords,NotFound} from './Components';
+import {Routes, Route, redirect as Redirect} from 'react-router-dom'
 class App extends Component {
   constructor(props) {
     super(props)
@@ -11,16 +11,17 @@ class App extends Component {
         <Header />
           <Routes>
             <Route index  element={<Body/>} />
-            <Route path="/About" element={<About/>} />
-            <Route path="/Services" element={<Service/>} />
-            <Route path="/Blog" element={<Blog/>} />
-            <Route path="/Contact-Us" element={<Contact/>} />
-            <Route path="/FAQ" element={<FAQ/>} />
-            <Route path="/Account" element={<Login/>} />
-            <Route path="/Register" element={<Register/>} />
-            <Route path="/Reset" element={<Reset/>} />
-            <Route path="/Update-Passwords" element={<UpdatePasswords/>} />
-            <Route path="/Order-Now" element={<Login/>} />
+            <Route exact path="/About" Component={props => <About {...props} from="homepage"/>} />
+            <Route exact path="/Services" element={<Service/>} />
+            <Route exact path="/Blog" element={<Blog/>} />
+            <Route exact path="/Contact-Us" element={<Contact/>} />
+            <Route exact path="/FAQ" element={<FAQ/>} />
+            <Route exact path="/Login" element={<Login/>} />
+            <Route exact path="/Register" element={<Register/>} />
+            <Route exact path="/Reset" element={<Reset/>} />
+            <Route exact path="/Update-Passwords" element={<UpdatePasswords/>} />
+            <Route exact path="/Order-Now" element={<Login/>} />
+            <Route path="/*" element={<NotFound/>} />
           </Routes>
         <Footer />
       </div>

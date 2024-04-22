@@ -24,7 +24,7 @@ export default class FAQ extends Component {
     return (
         <>
         <section className='h-[30vh] contact-bg flex flex-col items-center justify-center'>
-          <div className="text-black md:text-6xl text-xl font-bold capitalize">
+          <div className="text-black md:text-3xl text-xl font-bold capitalize">
              Frequently Asked Questions
           </div>
           <div className='text-white bg-primary'>
@@ -143,8 +143,11 @@ export default class FAQ extends Component {
             {/* end question 5*/}
           </div>
           <div className="text-center my-5">
-            Question not Answered?
-            <Link to={"/Contact-us"} className='p-2 bg-primary text-white ml-5'>Talk to Us </Link>
+            <p>
+              Question not Answered?
+            </p>
+             <br/>
+            <Link to={"/Contact-us"} className='p-2 bg-primary text-white m-auto mt-2'>Talk to Us </Link>
           </div>
         </section>
         </>
