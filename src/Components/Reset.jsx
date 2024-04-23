@@ -23,7 +23,7 @@ export default class Reset extends Component {
             </form>
             <div className="flex md:flex-row flex-col gap-2 justify-evenly items-center mt-3">
               <Link to="/Register" className='text-slate-500'>Register Here</Link>
-              <Link to="/Account" className='text-slate-500'>Login</Link>
+              <Link to="/Login" className='text-slate-500'>Login</Link>
             </div>
           </div>
         </section>

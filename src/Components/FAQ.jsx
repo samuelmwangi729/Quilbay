@@ -23,7 +23,7 @@ export default class FAQ extends Component {
   render() {
     return (
         <>
-        <section className='h-[30vh] contact-bg flex flex-col items-center justify-center'>
+        <section className='h-[30vh] faq-bg flex flex-col items-center justify-center'>
           <div className="text-black md:text-3xl text-xl font-bold capitalize">
              Frequently Asked Questions
           </div>

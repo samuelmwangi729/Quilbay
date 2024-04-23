@@ -6,7 +6,7 @@ export default class Register extends Component {
     return (
       <>
         <section className='flex flex-col justify-center items-start gap-3 lg:w-[40%] h-[fit-content] md:w-[50%] w-[90%] m-auto'>
-          <div className="form w-full shadow-2xl md:p-10 mb-5">
+          <div className="form w-full shadow-2xl md:p-10 mb-5 mt-5">
             <h1 className="md:title mx-2 font-bold text-xl">
               Register An Account with Us
             </h1>
@@ -34,7 +34,7 @@ export default class Register extends Component {
               </div>
             </form>
             <div className="flex md:flex-row flex-col gap-2 justify-evenly items-center mt-3">
-              <Link to="/Account" className='text-slate-500'>Login</Link>
+              <Link to="/Login" className='text-slate-500'>Login</Link>
               <Link to="/Reset" className='text-slate-500'>Forgot Password?</Link>
             </div>
           </div>

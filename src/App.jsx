@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Body,Header,Footer,Service, Login, FAQ, Blog, About, Contact,Register,Reset,UpdatePasswords,NotFound} from './Components';
 import {Routes, Route, redirect as Redirect} from 'react-router-dom'
+import { Dashboard, Orders } from './Components/Auth';
 class App extends Component {
   constructor(props) {
     super(props)
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/Reset" element={<Reset/>} />
             <Route exact path="/Update-Passwords" element={<UpdatePasswords/>} />
             <Route exact path="/Order-Now" element={<Login/>} />
+            <Route exact path={"/Dashboard"} element={<Dashboard/>} />
             <Route path="/*" element={<NotFound/>} />
           </Routes>
         <Footer />

@@ -75,6 +75,13 @@ body{
     background-size: cover;
     background-position:bottom;
 }
+.faq-bg{
+    background: url("./Assets/Images/FAQ.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:top center;
+}
 .owl-dots{
     display: none;
 }
