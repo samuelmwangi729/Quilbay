@@ -23,6 +23,7 @@ class App extends Component {
             <Route exact path="/Update-Passwords" element={<UpdatePasswords/>} />
             <Route exact path="/Order-Now" element={<Login/>} />
             <Route exact path={"/Dashboard"} element={<Dashboard/>} />
+            <Route exact path={"/Order/Create"} element={<Orders/>} />
             <Route path="/*" element={<NotFound/>} />
           </Routes>
         <Footer />

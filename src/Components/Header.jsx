@@ -19,7 +19,7 @@ class Header extends Component {
     }
     render() {
         return (
-            <div className='w-full h-[fit-content] bg-orange-500 sticky top-0 left-0 font-serif z-10 p-2 duration-500'>
+            <div className='w-full h-[fit-content] bg-orange-500 sticky top-0 left-0 font-serif z-20 p-2 duration-500'>
                 <nav className='flex justify-between  items-center  w-full'>
                     <Link to={"/"}>
                         <img src={LogoHeader} alt="Quilbay Logo" className='lg:object-cover md:object-fill  h-[50px]' />
@@ -52,7 +52,7 @@ class Header extends Component {
                             </li>
                         </ul>
                         <div className=''>
-                            <Link to={"/Order-Now"}>
+                            <Link to={"/Order/Create"}>
                                 <button className=' text-nowrap bg-secondary p-2 mt-1 text-white w-[calc(200%/2)] md:w-[auto] md:border border-secondary md:rounded-xl hover:bg-white hover:text-secondary transition ease-linear duration-500'>
                                     Order Now
                                 </button>
@@ -88,7 +88,6 @@ class Header extends Component {
                             <li className='hover:bg-secondary hover:text-white p-2'>
                                 <Link to="/Login">Login</Link>
                             </li>
-
                         </ul>
                     </div>
                 ) : ""}
