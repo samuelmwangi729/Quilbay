@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { FaBars, FaX } from 'react-icons/fa6'
 import { Link, useLocation } from 'react-router-dom';
 import LogoHeader from '../Assets/Images/logo-1.png';
+import LogoTwo from '../Assets/Images/voting.png';
 class Header extends Component {
 
     constructor() {
@@ -22,7 +23,7 @@ class Header extends Component {
             <div className='w-full h-[fit-content] bg-orange-500 sticky top-0 left-0 font-serif z-20 p-2 duration-500'>
                 <nav className='flex justify-between  items-center  w-full'>
                     <Link to={"/"}>
-                        <img src={LogoHeader} alt="Quilbay Logo" className='lg:object-cover md:object-fill  h-[50px]' />
+                        <img src={LogoTwo} alt="Quilbay Logo" className='lg:object-cover md:object-fill  h-[50px]' />
                     </Link>
                     <div className='md:flex  items-center md:gap-1 mx-4'>
                         <ul className='md:flex gap-2 items-center text-white font-bold hidden '>
